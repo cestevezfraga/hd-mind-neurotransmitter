@@ -138,6 +138,6 @@ output:
 
 
 16.	brain_surface_github.ipynb
-Script to generate brain surface fgure
+Script to generate brain surface figure
 Note: In my laptop it required a different environment  (conda activate py38 with an outdated version of numpy )
-![image](https://github.com/user-attachments/assets/73785177-7611-4aa9-afb3-f2b4d3b5d24d)
+
