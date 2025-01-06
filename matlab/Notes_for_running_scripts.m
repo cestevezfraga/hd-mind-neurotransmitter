@@ -1,0 +1,21 @@
+%% Notes for Running MATLAB scripts
+
+%% Genereate NBS input files
+% Each script in this folder will create the input files needed for NBS
+% analyses in the paper including group-wise analyses and NfL correlation
+% analyses. 
+
+%This include Design Matrix & Connectivity Matrices, these can then be
+%loaded into NBS (along with desikan coords and labels) also in this folder and required for visualisation 
+
+%% Visualise NBS Results
+% The scripts in folder 'Create_BNV_&_CircularGraph_input_files' need to be
+% run after running the corresponding NBS analysis. These will then
+% generate the required input files for BNV (BrainNetViewer) and Circular
+% Graph.
+
+% The input files have already been generated and can be found in 'BNV_input_files' and 'Circular_Graph_Input_files' folders
+
+% The scripts 'create_Circular_graphs.m' & 'create_BNV_images_highres.m'
+% can be run directly in the folder to generate the figures used in the
+% paper
