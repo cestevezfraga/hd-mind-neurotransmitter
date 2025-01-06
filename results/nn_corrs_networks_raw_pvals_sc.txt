@@ -1,0 +1,4 @@
+# Raw p-values before FDR correction for each network and disease
+0.580420
+0.031968
+0.161838

@@ -1,0 +1,4 @@
+# Pvals FDR correction for each network and disease
+0.580420
+0.095904
+0.242757
