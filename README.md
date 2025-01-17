@@ -1,10 +1,10 @@
 # hd-mind-neurotransmitter
-Scripts to obtain mind connectivity and investigate the its biological underpinnings
+Scripts to obtain mind connectivity and investigate  its biological underpinnings
 
 1.	mind_github.ipynb (python)
 Script to generate MIND networks
 Input: T1 imaging data already parcellated  with freesurfer (examples from six particioants 000-000-001 and 000-000-002)
-Output are subject-specific mind networks: mind.csv files inside each participant’s folder
+Output is subject-specific mind networks: mind.csv files inside each participant’s folder
 
 2.	cohens_mind_track_node_github.R 
 Script to obtain Cohens D for MIND networks in patients vs controls
@@ -22,11 +22,11 @@ Epicenter analysis from Cohens D data. Figure 4 from the paper. Using data from 
 Note: In my laptop it required a different environment  (conda activate py38 with an outdated version of numpy )
 Input: cohens_d_right_transp.csv file with Cohens D across ROIs
 Output: 
-	fc: functional connecticity. sc: structural connectivity. ctx: cortico-cortical. sctx: subcortico-cortical
+	fc: functional connectivity. sc: structural connectivity. ctx: cortico-cortical. sctx: subcortico-cortical
 	fc_ctx_track_node.png —> Figure depicting ROIs with significant associations between cortico-cortical functional connectivity in controls and MIND connectivity in HD
 	fc_ctx_track_node_p_fdr.txt —> FDR corrected P values 
 	fc_ctx_track_node_coefficients.txt —> Correlation coefficients
-	Same with structural connectivity and subcortico-cortical connections as per the legenf
+	Same with structural connectivity and subcortico-cortical connections as per the legend
 
 5.	contributions_mind_github.ipynb
 Script to investigate the relative contribution of different organizational principles to MIND connectivity. Figure 5 from the paper.
@@ -88,7 +88,7 @@ Output:
 	zscored_receptor_data_scale068.csv —> Z scored CSV file with receptor matrix
 
 11.	neurotransmitter_github.ipynb
-Script to determine the PET neurotransmitter systems associated with MIND connectivity. Figure 7A and 7B
+Script to determine the PET neurotransmitter systems associated with MIND connectivity. Figures 7A and 7B
 Input:
 	modified_enigma_atrophy_node.csv —> Cohens D data across ROIs reordered with the Cammoun atlas. Each column corresponds to one cohort (early preHD, 	late preHD and mHD)
 	cammoun_zscored_receptor_data_scale068.csv —> PET data from healtgy controls  
@@ -111,7 +111,7 @@ Output: (SG = Supragranular, G = granular, IG = Infragranular)
 
 13.	combat_github.ipynb
 
-Script to perform combat harminonization, Figure S1
+Script to perform combat harmonization, Figure S1
 input: 
 	mind_node_mhd.csv file —> mind node data from the mHD cohort
 	demos_long_mhd —> demographic data (note: to preserve anonymization this demographic data has been generated using random numbers) 
@@ -124,7 +124,7 @@ Script to parcellated files already processed with recon-all
 15.	mind_parcellations_github.ipynb
 Script to obtain mind data with different parcellation resolutions
 input: 
-	999-999-999 (example subject after processing with recon-all
+	Any T1 imaging file after processing with Freesurfer's recon all with the different parcellation atlases (eg HCP, Schaeffer 100 parcels 7 Networks etc...)
 
 output: 
 	mind_500.sym.aparc.csv
