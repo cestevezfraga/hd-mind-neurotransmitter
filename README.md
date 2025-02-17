@@ -113,15 +113,27 @@ Output: (SG = Supragranular, G = granular, IG = Infragranular)
 
 Script to perform combat harmonization, Figure S1
 input: 
-	mind_node_mhd.csv file —> mind node data from the mHD cohort
-	demos_long_mhd —> demographic data (note: to preserve anonymization this demographic data has been generated using random numbers) 
+	mind_node.csv file —> mind node data
+	demos_long —> demographic data (note: to preserve anonymization this demographic data has been generated using random numbers) 
 output:
-	data_combat_mhd.csv —> combat harmonized mind data
+	data_combat.csv —> combat harmonized mind data
+
+14. combat_analyse_github.R
+
+Script to generate the P values and figure S1 from combat data
+input: 
+	data_combat.csv --> combat processed data
+	 mind_node.csv --> raw data
+
+Output: 
+	boxplot_combat_vs_raw.pdf --> box plots comparing mind node values across subjects before and after combat harmonization
+ 	combat_vs_raw.csv --> P values for the differences before  and after combat harmonization
+ 	
 	
-14.	parcellate_github.sh
+15. 	parcellate_github.sh
 Script to parcellated files already processed with recon-all
 
-15.	mind_parcellations_github.ipynb
+16.	mind_parcellations_github.ipynb
 Script to obtain mind data with different parcellation resolutions
 input: 
 	Any T1 imaging file after processing with Freesurfer's recon all with the different parcellation atlases (eg HCP, Schaeffer 100 parcels 7 Networks etc...)
@@ -137,7 +149,7 @@ output:
 	mind_Schaefer2018_500Parcels_17Networks_order.csv
 
 
-16.	brain_surface_github.ipynb
+17.	brain_surface_github.ipynb
 Script to generate brain surface figure
 Note: In my laptop it required a different environment  (conda activate py38 with an outdated version of numpy )
 
